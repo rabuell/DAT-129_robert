@@ -1,0 +1,12 @@
+{
+	"search_value_1": {
+		"field_name": "Lowest",
+		"field_value": "23000",
+		"field_action": ">"
+		},
+	"search_value_2": {
+		"field_name": "Second",
+		"field_value": "45000",
+		"field_action": ">"
+		}
+}

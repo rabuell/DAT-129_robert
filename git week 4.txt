@@ -1,0 +1,174 @@
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 /
+$ cd github_2
+bash: cd: github_2: No such file or directory
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 /
+$ cd ~
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~
+$ cd github_2
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/github_2 (master)
+$ ls -al
+total 28
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:52 ./
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:54 ../
+-rw-r--r-- 1 Robert Buell 197121 12288 Sep 18 14:53 .datachoice_rob.json.swp
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:47 .git/
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:45 main/
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/github_2 (master)
+$ git remote
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/github_2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .datachoice_rob.json.swp
+        main/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/github_2 (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/github_2 (master)
+$ ls -al
+total 28
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:52 ./
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:54 ../
+-rw-r--r-- 1 Robert Buell 197121 12288 Sep 18 14:53 .datachoice_rob.json.swp
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:55 .git/
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:45 main/
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/github_2 (master)
+$ cd DAT-129_robert
+bash: cd: DAT-129_robert: No such file or directory
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/github_2 (master)
+$ cd ~
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~
+$ cd DAT-129_robert
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ ls -al
+total 53
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:21 ./
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 15:03 ../
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:21 .git/
+-rw-r--r-- 1 Robert Buell 197121 35823 Sep 18 14:21 LICENSE
+-rw-r--r-- 1 Robert Buell 197121    61 Sep 18 14:21 README.md
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git log
+commit 97baf09cf1b8596943ba2da3ea35ad33b6b103c0 (HEAD -> main, origin/main, origin/HEAD)
+Author: rabuell <72476388+rabuell@users.noreply.github.com>
+Date:   Sat Sep 18 14:16:03 2021 -0400
+
+    Update README.md
+
+commit 38bc3abf03b1deb3f822758626ffb9b5f8cb0077
+Author: rabuell <72476388+rabuell@users.noreply.github.com>
+Date:   Sat Sep 18 14:13:14 2021 -0400
+
+    Initial commit
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ ls -al
+total 54
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 15:05 ./
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 15:04 ../
+drwxr-xr-x 1 Robert Buell 197121     0 Sep 18 14:21 .git/
+-rw-r--r-- 1 Robert Buell 197121 35823 Sep 18 14:21 LICENSE
+-rw-r--r-- 1 Robert Buell 197121    61 Sep 18 14:21 README.md
+-rw-r--r-- 1 Robert Buell 197121    47 Sep 18 15:05 myfile.json
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git add myfile,json
+fatal: pathspec 'myfile,json' did not match any files
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git add myfile.json
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git commit -m "json file test"
+[main ba6ad8f] json file test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 myfile.json
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git push origin main
+To https://github.com/rabuell/DAT-129_robert.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/rabuell/DAT-129_robert.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git fetch https://github.com/rabuell/DAT-129_robert.git main
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), 1.97 KiB | 2.00 KiB/s, done.
+From https://github.com/rabuell/DAT-129_robert
+ * branch            main       -> FETCH_HEAD
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git merge origin/main
+Already up to date.
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git push origin main
+To https://github.com/rabuell/DAT-129_robert.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/rabuell/DAT-129_robert.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git pull orgin main
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git origin main
+git: 'origin' is not a git command. See 'git --help'.
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git pull origin main
+From https://github.com/rabuell/DAT-129_robert
+ * branch            main       -> FETCH_HEAD
+   97baf09..3442997  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 715 bytes | 357.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rabuell/DAT-129_robert.git
+   3442997..8cfa2a6  main -> main
+
+Robert Buell@DESKTOP-FRHACD7 MINGW64 ~/DAT-129_robert (main)

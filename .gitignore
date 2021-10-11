@@ -1,0 +1,2 @@
+# jupyter notebook backup files will be ignore by git
+.ipynb_checkpoints/

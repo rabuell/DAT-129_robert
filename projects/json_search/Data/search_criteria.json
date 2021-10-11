@@ -1,0 +1,32 @@
+{
+	"search_value_1": {
+		"field_name": "Lowest",
+		"field_value": "23000",
+		"field_action": ">"
+		},
+	"search_value_2": {
+		"field_name": "Second",
+		"field_value": "45000",
+		"field_action": ">"
+		},
+    "search_value_3": {
+		"field_name": "Third",
+		"field_value": "67000",
+		"field_action": "<="
+		},
+"search_value_4": {
+		"field_name": "Fourth",
+		"field_value": "100000",
+		"field_action": ">="
+		},
+"search_value_5": {
+		"field_name": "Year",
+		"field_value": "2000",
+		"field_action": "="
+		},
+"search_value_6": {
+		"field_name": "Lowest",
+		"field_value": "21000",
+		"field_action": "<"
+		}
+}

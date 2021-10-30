@@ -22,3 +22,9 @@ Overview - The module creates a 10x10 icon from either file input or keyboard in
 "90" - Rotates the ICON 90 degrees.\
 "180" - Rotates the ICON 180 degrees.\
 "270" - Rotates the ICON 270 degrees.
+
+## Peer Teaching
+
+Demostrated functions as objects to the class.
+
+Applied Pandas to my ICON project in order to enhance the printing.

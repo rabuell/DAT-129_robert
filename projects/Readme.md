@@ -31,5 +31,5 @@ Applied Pandas to my ICON project in order to enhance the printing.
 
 ## API Project
 
-module name - census_API1
-Overview - Uses Cenus 5 Year ACS API to select races for two cointies in PA and compare the results in a bar chart
+module name - census_API1\
+Overview - Uses Cenus 5 Year ACS API to select races for two cointies in PA and compare the results in a bar chart.

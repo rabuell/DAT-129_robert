@@ -33,3 +33,8 @@ Applied Pandas to my ICON project in order to enhance the printing.
 
 module name - census_API1\
 Overview - Uses Cenus 5 Year ACS API to select races for two cointies in PA and compare the results in a bar chart.
+
+## Final Project
+
+module name - census_API1_1217
+Overview - Uses Cenus 5 Year ACS API to select races/Hispanic data for five congressional districts with a state and compare the results in a bar chart.  Prompts for which state to be selected and which districts to be selected.  Also write results to SQLite table.
